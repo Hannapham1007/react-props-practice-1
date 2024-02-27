@@ -10,9 +10,9 @@ function App() {
   return (
     <>
     <div className="app">
-      <Title className="title" titleName={"Welcome "+name}></Title>
-      <NameLength className="name-length" nameLength={"Did you know that "+ name + " is" + name.length + "characters long?!"}></NameLength>
-      <NameReversed className="name-reversed" nameReverse={"Also "+ name +" backwards is " + reverse(name)}></NameReversed>
+      <Title titleName={name}></Title>
+      <NameLength nameLength={name}></NameLength>
+      <NameReversed  nameReverse={name}></NameReversed>
 
     </div>
     </>

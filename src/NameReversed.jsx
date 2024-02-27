@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { reverse } from './helpers';
 
-function NameReversed({nameReverse}) {
+function NameReversed({ nameReverse }) {
+  const reversedName = reverse(nameReverse);
+
   return (
-    <p>{nameReverse}</p>
-  )
+    <p className="name-reversed">
+      Also {nameReverse} backwards is {reversedName}
+    </p>
+  );
 }
 
-export default NameReversed
+export default NameReversed;

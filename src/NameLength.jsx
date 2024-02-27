@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function NameLength({nameLength}) {
+function NameLength({ nameLength }) {
   return (
-    <p>{nameLength}</p>
-  )
+    <p className="name-length">
+      Did you know that {nameLength} is {nameLength.split(' ').join('').length} characters long?!
+    </p>
+  );
 }
 
-export default NameLength
+export default NameLength;
